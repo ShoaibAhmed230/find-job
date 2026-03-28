@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Neue Haas Grotesk Display Pro", "Helvetica Neue", Helvetica, Arial, var(--font-inter), sans-serif;
+  --color-primary: #0154AA;
+  --color-background: #f5f6f8;
+  --color-foreground: #111827;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Global: all interactive elements get pointer + smooth transition */
+button,
+a,
+[role="button"],
+select,
+input[type="submit"],
+input[type="button"],
+label[for] {
+  cursor: pointer;
+}
+
+/* Smooth transitions on all interactive elements by default */
+button,
+a,
+input,
+select {
+  transition: all 0.2s ease;
+}
+
+/* Card hover lift effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
