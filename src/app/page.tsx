@@ -74,7 +74,7 @@ export default async function Home({
           {/* Header Greeting */}
           <div>
             <h1 className="text-2xl font-semibold text-gray-900 leading-snug">
-              Find your Dream Job, <span className="text-primary font-bold">Alert!</span>
+              Find your Dream Job with <span className="text-primary font-bold">TalentVare</span>
             </h1>
             <p className="text-gray-500 text-sm mt-1">
               Explore the latest job openings and apply for the best opportunities available today!
