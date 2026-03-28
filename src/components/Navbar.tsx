@@ -82,7 +82,7 @@ export default function Navbar() {
         {/* Left section: Logo and Links */}
         <div className="flex items-center gap-4">
           <Link href="/" className="flex items-center justify-center flex-shrink-0 mr-2">
-            <img src={siteLogo.src} alt="Site Logo" className="h-[40px] w-auto object-contain" />
+            <img src={siteLogo.src} alt="TalentVare Logo" className="h-[40px] w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation Links */}
